@@ -14,70 +14,99 @@ for row in result:
   print(row)  
 
 ## Algoritm:
-A)Print Even Numbers from 1 to 10:
-Start
-Initialize a loop starting at i = 2, ending before 11, with a step increment of 2.
-In each iteration, print the current value of i.
-End
+1: DISPLAY NUMBERS FROM 1 TO 5 USING FOR LOOP
 
-B)Sum of First n Numbers:
 Start
-Input an integer value for n.
-Initialize a variable sum to 0.
-Initialize a loop that iterates from i = 1 to n.
-In each iteration, add the value of i to sum.
-After the loop finishes, print the final value of sum.
-End
+Initialize a for loop to iterate from 1 to 5 using range()
+Print the value of the loop variable in each iteration
+Repeat until all values in the range are completed
+Stop
 
-C)Print a 3x3 Matrix:
-Start
-Define a 2D list (matrix) a with 3 rows and 3 columns.
-Outer loop: Iterate through each row index i (from 0 to 2).
-Inner loop: Iterate through each column index j (from 0 to 2).
-Print the element at a[i][j] followed by a space, without moving to a new line.
-After the inner loop finishes, print a newline character to move to the next row.
-End
+2: PRINT ODD NUMBERS FROM 1 TO 10 USING FOR LOOP
 
-D)Matrix Multiplication (3x3):
 Start
-Define two 3x3 matrices, a and b.
-Initialize a 3x3 matrix result filled with 0s.
-Outer loop: Iterate through each row i of matrix a.
-Middle loop: Iterate through each column j of matrix b.
-Inner loop: Iterate through index k (from 0 to 2) to perform dot product.
-Calculate result[i][j] = result[i][j] + (a[i][k] * b[k][j]).
-After all loops, iterate through each row in result and print it.
-End
+Initialize a for loop using range from 1 to 10 with step value 2
+In each iteration, display the value of the loop variable
+Repeat until the loop completes all values in the range
+Stop
 
-E)Combinations of 3 Unequal Numbers:
-Start
-Define a list d containing three distinct numbers (1, 2, 3).
-Create three nested loops (i, j, k), each iterating from index 0 to 2.
-Check the condition: if d[i] != d[j] AND d[j] != d[k] AND d[i] != d[k].
-If the condition is true, print the combination d[i], d[j], d[k].
-End
+3: PRINT EVEN NUMBERS FROM 1 TO 10 USING FOR LOOP
 
-F)Pattern Printing (Right-Angle and Pyramid)
-Algorithm for Right-Angle Triangle:
 Start
-Loop from i = 1 to 9.
-In each iteration, print the string "* " multiplied by i.
-End
-Algorithm for Pyramid Triangle:
-Start
-Set rows = 5.
-Loop from i = 1 to rows.
-In each iteration, print spaces equal to (rows - i) followed by the string "* " multiplied by i.
-End
+Initialize a for loop using range from 2 to 10 with step value 2
+In each iteration, display the value of the loop variable
+Repeat until all values in the range are completed
+Stop
 
-G)Print All Prime Numbers (2 to 49):
+4: FIND THE SUM OF FIRST N NATURAL NUMBERS USING FOR LOOP
+
 Start
-Outer loop: Iterate n from 2 to 49.
-Inner loop: Iterate i from 2 up to n-1.
-Check if n is divisible by i (n % i == 0).
-If divisible, break the inner loop (not a prime).
-If the inner loop completes without a break, print n (it is prime).
-End
+Input a number n from the user
+Initialize a variable total with value 0
+Initialize a for loop from 1 to n
+Add the current value of the loop variable to total
+Repeat until the loop completes
+Display the sum stored in total
+Stop
+
+5: DISPLAY ELEMENTS OF A 3×3 MATRIX USING NESTED FOR LOOPS
+
+Start
+Create a 3×3 matrix with elements arranged in rows and columns
+Initialize an outer loop to iterate through rows (0 to 2)
+Inside it, initialize an inner loop to iterate through columns (0 to 2)
+Display the element at position A[i][j]
+Repeat the inner loop for all columns of a row
+Move to the next line after completing each row
+Repeat until all rows are displayed
+Stop
+
+6: MATRIX MULTIPLICATION USING NESTED FOR LOOPS
+
+Start
+Create two 3×3 matrices A and B
+Create a result matrix initialized with zeros
+Use an outer loop to iterate through rows of matrix A
+Use a second loop to iterate through columns of matrix B
+Initialize a third loop to perform multiplication of corresponding elements
+Multiply elements A[i][k] and B[k][j] and add the result to Result[i][j]
+Repeat the third loop for all values of k
+Repeat steps 5 to 8 for all columns
+Repeat steps 4 to 9 for all rows
+Display the resulting matrix
+Stop
+
+7: PRINT ALL POSSIBLE COMBINATIONS OF THREE DIGITS
+
+Start
+Initialize three digits and store them in a list
+Use the first loop to select the first digit
+Use the second loop to select the second digit
+Use the third loop to select the third digit
+Check that all three selected digits are different
+If all digits are different, display the combination
+Repeat until all possible combinations are generated
+Stop
+
+8: PRINT AN INVERTED RIGHT-ANGLED TRIANGLE PATTERN
+
+Start
+Initialize a for loop to run from 5 down to 1
+In each iteration, print the symbol “*” repeated i times
+Move to the next line after each iteration
+Repeat until the loop ends
+Stop
+
+9: PRINT A PYRAMID STAR PATTERN
+
+Start
+Set the number of rows for the pyramid
+Initialize a for loop from 1 to the number of rows
+Print spaces equal to (rows − current row number)
+Print the symbol “* ” repeated equal to the current row number
+Move to the next line after each iteration
+Repeat until all rows are printed
+Stop
 
 ## Conclusion:
 Hence for loop was used in python and programs were done using it.
